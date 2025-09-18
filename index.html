@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Interactive Page</h1>
+    <button id="themeToggle">Toggle Light/Dark Mode</button>
+  </header>
+
+  <section id="counterSection">
+    <h2>Click Counter</h2>
+    <button id="countBtn">Click Me</button>
+    <p>You've clicked <span id="clickCount">0</span> times.</p>
+  </section>
+
+  <section id="faqSection">
+    <h2>FAQ</h2>
+    <div class="faq">
+      <button class="faq-question">What is JavaScript?</button>
+      <p class="faq-answer hidden">JavaScript is a programming language for the web.</p>
+    </div>
+  </section>
+
+  <section id="formSection">
+    <h2>Sign Up Form</h2>
+    <form id="signupForm" novalidate>
+      <label>Name: <input type="text" id="name" /></label><br />
+      <label>Email: <input type="email" id="email" /></label><br />
+      <label>Password: <input type="password" id="password" /></label><br />
+      <button type="submit">Submit</button>
+      <div id="formMessages"></div>
+    </form>
+  </section>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>
